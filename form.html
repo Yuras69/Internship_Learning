@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FORM</title>
+    <script src="https://cdn.tailwindcss.com "></script>
+    <body container class="flex flex-col items-center justify-center h-screen bg-gray-100">
+</head>
+<div>
+    <form id="myForm" class="flex flex-col gap-2">
+        <h2 class = text-2xl font-bold>Provide your Info</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class ="border  rounded p-2 ">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" class ="border  rounded p-2 ">
+        <button type="submit" class="border px-2 py-1 bg-purple-900 text-white">Submit</button>
+    </form>
+    </div>
+    <div>
+        <form id="mydelete" class="flex flex-col gap-2">
+        <label for="id">ID:</label>
+        <input type="number" id="id" name="id" class="border rounded p-2 ">
+        <button type="submit" class="border px-2 py-1 bg-purple-900 text-white">Delete</button>
+    </form>
+    </div>
+    <div class="flex flex-col"> 
+        <form id="getdata" class="flex flex-col">
+            <button type="submit" class="border px-2 py-1 bg-red-900 text-white">Get Data</button>
+        </form>
+    </div>
+    <div id ="response"></div>
+    <script src="form.js"></script>
+</body>
+</html>
